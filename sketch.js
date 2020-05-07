@@ -30,8 +30,11 @@ function draw() {
 }
 function keyPressed() {
   if (keyCode === UP_ARROW) {
-    circle.x = mouseX;
-    circle.y = mouseY;
+    circle.y = circle.y - 5;
+    circle.display();
+  }
+  else if (keyCode === DOWN_ARROW) {
+    circle.y = circle.y + 5;
     circle.display();
   }
 }
